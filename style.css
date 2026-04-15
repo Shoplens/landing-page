@@ -15,6 +15,7 @@
 body {
   color: var(--navy);
   background: white;
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -269,6 +270,17 @@ footer {
 
 /* MOBILE VERSION */
 @media (max-width: 768px) {
+  .hero,
+  .signup-container,
+  .solution-grid,
+  .problem-grid {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  section {
+    padding: 40px 16px !important;
+  }
 
   /* NAVBAR */
   .navbar {
@@ -327,5 +339,18 @@ footer {
   .cta {
     padding: 50px 5%;
   }
+
+  img {
+  max-width: 100%;
+  height: auto;
+}
+
+  @media (max-width: 768px) {
+  .hero-left,
+  .hero-right,
+  .signup-form {
+    width: 100%;
+  }
+}
 
 }
