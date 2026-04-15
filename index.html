@@ -7,6 +7,8 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
@@ -80,7 +82,7 @@
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="steps fade-up">
+<section class="steps" data-aos="fade-up">
   <h2>How it works</h2>
   <div class="steps-grid">
     <div>
@@ -157,5 +159,10 @@ const observer = new IntersectionObserver((entries) => {
 els.forEach(el => observer.observe(el));
 </script>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  
 </body>
 </html>
