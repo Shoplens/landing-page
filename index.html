@@ -80,7 +80,7 @@
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="steps">
+<section class="steps fade-up">
   <h2>How it works</h2>
   <div class="steps-grid">
     <div>
@@ -142,6 +142,20 @@
 <footer>
   <p>© 2026 ShopLens</p>
 </footer>
+
+  <script>
+const els = document.querySelectorAll('.fade-up');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+els.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
