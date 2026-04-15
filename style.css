@@ -354,3 +354,54 @@ footer {
 }
 
 }
+
+.hero-left {
+  animation: fadeSlide 1s ease forwards;
+}
+
+.hero-right {
+  animation: fadeSlide 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.steps-grid div {
+  transition: all 0.3s ease;
+}
+
+.steps-grid div:hover {
+  transform: translateY(-5px);
+}
+
+section {
+  transition: all 0.3s ease;
+}
